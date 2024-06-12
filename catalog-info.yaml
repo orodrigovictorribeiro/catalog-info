@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "insurance-compra-online-bff"
+  description: "A BFF responsible for centralize all services used by "compra online" context from Insurance BU, including offers, checkout and user account."
+  labels:
+    creditas.io/tribe: insurance
+    creditas.io/language: CSharp
+  annotations:
+    # https://backstage.io/docs/features/software-catalog/well-known-annotations#githubcomproject-slug
+    github.com/project-slug: Creditas/insurance-compra-online-bff
+
+    # Uncomment this line to classify the type of exposure for this service
+    # ENUM: [internal, external]
+    creditas.io/expose-type: internal
+
+    creditas.io/tribe: tribe-insurance
+    creditas.io/squad: unknow
+    creditas.io/language: CSharp
+    creditas.io/impact: high
+
+  tags:
+    - csharp
+    - offer  
+spec:
+  type: service  
+  lifecycle: production
+  owner: tribe-insurance
